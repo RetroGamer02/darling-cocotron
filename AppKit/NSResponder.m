@@ -298,6 +298,14 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
     [_nextResponder performSelector: _cmd withObject: event];
 }
 
+- (void) otherMouseUp: (NSEvent *) event {
+    [_nextResponder performSelector: _cmd withObject: event];
+}
+
+- (void) otherMouseDown: (NSEvent *) event {
+    [_nextResponder performSelector: _cmd withObject: event];
+}
+
 - (void) noop: sender {
 }
 
