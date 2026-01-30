@@ -75,6 +75,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 
 - (void) otherMouseUp: (NSEvent *) event;
 - (void) otherMouseDown: (NSEvent *) event;
+- (void) otherMouseDragged: (NSEvent *) event;
 
 @end
 
