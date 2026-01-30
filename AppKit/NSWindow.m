@@ -2363,6 +2363,11 @@ static BOOL _allowsAutomaticWindowTabbing;
                 rightMouseDragged: event];
         break;
 
+    case NSOtherMouseDragged:
+        [[_backgroundView hitTest: _mouseDownLocationInWindow]
+                otherMouseDragged: event];
+        break;
+
     case NSMouseEntered:
         [[_backgroundView hitTest: [event locationInWindow]]
                 mouseEntered: event];
