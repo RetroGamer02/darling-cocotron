@@ -306,6 +306,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
     [_nextResponder performSelector: _cmd withObject: event];
 }
 
+- (void) otherMouseDragged: (NSEvent *) event {
+    [_nextResponder performSelector: _cmd withObject: event];
+}
+
 - (void) noop: sender {
 }
 
